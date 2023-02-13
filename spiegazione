@@ -1,16 +1,16 @@
-Verifica dei parametri: Il primo passo del script verifica che siano stati forniti tutti i parametri richiesti: token, versione di Python, nome del progetto e directory del progetto. In caso contrario, il script termina con un messaggio di errore.
+Verifica dei parametri: Il primo passo dello script verifica che siano stati forniti tutti i parametri richiesti: token, versione di Python, nome del progetto e directory del progetto. In caso contrario, lo script termina con un messaggio di errore.
 
-Verifica della directory del modello: Il script verifica anche se la directory del modello esiste e se i file modello esistono. In caso contrario, il script termina con un messaggio di errore.
+Verifica della directory del modello: Lo script verifica anche se la directory del modello esiste e se i file modello esistono. In caso contrario, lo script termina con un messaggio di errore.
 
-Verifica dei tool installati: Il script verifica se sono installati pyenv, pyenv-virtualenv, pipenv, git e curl. In caso contrario, il script termina con un messaggio di errore.
+Verifica dei tool installati: Lo script verifica se sono installati pyenv, pyenv-virtualenv, pipenv, git e curl. In caso contrario, lo script termina con un messaggio di errore.
 
-Creazione della struttura del progetto: Il script crea la directory del progetto se non esiste, quindi crea la struttura del progetto che include README.md, pyproject.toml, LICENSE, src, tests e altri file.
+Creazione della struttura del progetto: Lo script crea la directory del progetto se non esiste, quindi crea la struttura del progetto che include README.md, pyproject.toml, LICENSE, src, tests e altri file.
 
-Configurazione di Git: Il script configura le informazioni globali di Git per l'utente e l'indirizzo email.
+Configurazione di Git: Lo script configura le informazioni globali di Git per l'utente e l'indirizzo email.
 
-Creazione di un ambiente virtuale: Il script verifica se la versione di Python specificata è installata, quindi crea un ambiente virtuale con pipenv e imposta l'ambiente virtuale come ambiente locale.
+Creazione di un ambiente virtuale: Lo script verifica se la versione di Python specificata è installata, quindi crea un ambiente virtuale con pipenv e imposta l'ambiente virtuale come ambiente locale.
 
-Inizializzazione di Git: Infine, il script inizializza un repository Git all'interno della directory del progetto e esegue il primo commit.
+Inizializzazione di Git: Infine, lo script inizializza un repository Git all'interno della directory del progetto e esegue il primo commit.
 
 Questo script crea una struttura di base per un progetto Python e configura il file pyproject.toml per il sistema di costruzione setuptools.
 
@@ -35,23 +35,18 @@ chmod +x nome_script.sh
 ./nome_script.sh
 
 Inizializza un repository Git nel tuo progetto:
-csharp
-Copy code
 $ git init
+
 Aggiungi tutti i file nell'area di stage:
-csharp
-Copy code
 $ git add .
+
 Fai una prima commit:
-ruby
-Copy code
 $ git commit -m "Initial Commit"
+
 Aggiungi il repository remoto su GitHub:
-csharp
-Copy code
 $ git remote add origin https://github.com/<username>/<repository_name>.git
+
 Carica tutti i file sul repository remoto:
-perl
-Copy code
 $ git push -u origin master
+
 Ora il tuo progetto dovrebbe essere caricato sul tuo repository GitHub.
